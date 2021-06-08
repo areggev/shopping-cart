@@ -60,3 +60,10 @@ print(selected_ids)
 
 # 2) Perform product lookups to determine what the product's name and price is
 
+for selected_id in selected_ids:
+        print(selected_id)
+        # or maybe display the selected product's name and price
+
+        matching_products = [p for p in products if str(p["id"]) == str(selected_id)]
+        matching_product = matching_products[0]
+        print(matching_product["name"], matching_product["price"])
