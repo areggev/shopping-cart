@@ -38,7 +38,6 @@ def to_usd(my_price):
 
 
 # 1) capture product ids until we're done
-# (use infinite while loop)
 
 print("Welcome to Andys Grocery Store!")
 print("---------------------------------------------------------------------------")
@@ -56,10 +55,12 @@ while True:
 
 print("-----------------------------------------------------------------------------")
 print("Andys Grocery Store")
+print("123-456-7890")
 print("-----------------------------------------------------------------------------")
+print("CHECKOUT AT", )
 print(selected_ids)
-
-
+print("SELECTED PRODUCTS")
+# 2) input matching, calculations and printing
 for selected_id in selected_ids:
         print(selected_id)
         # or maybe display the selected product's name and price
@@ -71,7 +72,7 @@ for selected_id in selected_ids:
 
 products = [...] #<--- that long list of product dictionaries provided above
 
-#
+# 
 # some commented-out loop
 # ... representing the result of the first checkpoint (if you did it)
 # ... which accepts user inputs
