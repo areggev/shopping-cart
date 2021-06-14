@@ -54,10 +54,10 @@ while True:
             selected_ids.append(selected_id)
     print(selected_id)
 
-print("WE HAVE REACHED THE END OF THE LOOP")
+print("-----------------------------------------------------------------------------)
+print("Andys Grocery Store")
+print("-----------------------------------------------------------------------------)
 print(selected_ids)
-
-# 2) Perform product lookups to determine what the product's name and price is
 
 for selected_id in selected_ids:
         print(selected_id)
