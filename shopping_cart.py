@@ -53,7 +53,7 @@ total_price = 0
 
 while True:
 
-    selected_id = input("Please select / scan a valid product id or enter 'DONE' if no additional items are required to be scanned: ")
+    selected_id = input("Please select a valid product id or enter 'DONE' if no additional items are required to be scanned: ")
     if selected_id.upper() == "DONE":
             break
     else:
