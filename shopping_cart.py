@@ -1,9 +1,5 @@
 # shopping_cart.py
 
-conda create -n shopping-env python=3.8 
-conda activate shopping-env
-pip install -r requirements.txt
-
 products = [
     {"id":1, "name": "Chocolate Sandwich Cookies", "department": "snacks", "aisle": "cookies cakes", "price": 3.50},
     {"id":2, "name": "All-Seasons Salt", "department": "pantry", "aisle": "spices seasonings", "price": 4.99},
@@ -41,10 +37,6 @@ def to_usd(my_price):
     return f"${my_price:,.2f}" #> $12,000.71
 
 
-# TODO: write some Python code here to produce the desired output
-
-
-
 # 1) capture product ids until we're done
 # (use infinite while loop)
 
@@ -52,7 +44,7 @@ selected_ids = []
 
 while True:
 
-    selected_id = input("Please select / scan a valid product id: ")
+    selected_id = input("Please select / scan a valid product id or enter 'DONE' if no additional items are required to be scanned: ")
     if selected_id.upper() == "DONE":
             break
     else:
@@ -87,3 +79,5 @@ products = [...] #<--- that long list of product dictionaries provided above
 product_ids = [1, 8, 6, 16, 6] # temporary list of valid ids for testing purposes
 
 print("SHOPPING CART ITEM IDENTIFIERS INCLUDE:", product_ids)
+
+print("THANK YOU FOR SHOPPING AT ANDYS GROCERY STORE, WE HOPE TO SEE YOU AGAIN SOON")
