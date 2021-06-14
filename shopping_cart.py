@@ -41,6 +41,7 @@ def to_usd(my_price):
 # (use infinite while loop)
 
 print("Welcome to Andys Grocery Store!")
+print("---------------------------------------------------------------------------")
 
 selected_ids = []
 
