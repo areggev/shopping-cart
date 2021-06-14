@@ -44,6 +44,8 @@ print("-------------------------------------------------------------------------
 
 selected_ids = []
 
+total_price = 0
+
 while True:
 
     selected_id = input("Please select / scan a valid product id or enter 'DONE' if no additional items are required to be scanned: ")
@@ -58,12 +60,14 @@ print("Andys Grocery Store")
 print("123-456-7890")
 print("-----------------------------------------------------------------------------")
 print("CHECKOUT AT", )
+print("-----------------------------------------------------------------------------")
 print("SELECTED PRODUCTS")
 # 2) input matching, calculations and printing
 for selected_id in selected_ids:
 
         matching_products = [p for p in products if str(p["id"]) == str(selected_id)]
         matching_product = matching_products[0]
+        total_price = total_ price + matching_product["price"]
         print("...", matching_product["name"], "(" , to_usd(matching_product["price"]), ")")
 
 
@@ -77,6 +81,8 @@ products = [...] #<--- that long list of product dictionaries provided above
 # ... and which we are temporarily ignoring
 # ... (yours will actually be some working python code)
 #
+
+print("TOTAL PRICE:", to_usd(string(total_price))
 
 product_ids = [1, 8, 6, 16, 6] # temporary list of valid ids for testing purposes
 
