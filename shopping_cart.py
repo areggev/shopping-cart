@@ -1,5 +1,9 @@
 # shopping_cart.py
 
+import datetime
+
+now = datetime.datetime.now()
+
 products = [
     {"id":1, "name": "Chocolate Sandwich Cookies", "department": "snacks", "aisle": "cookies cakes", "price": 3.50},
     {"id":2, "name": "All-Seasons Salt", "department": "pantry", "aisle": "spices seasonings", "price": 4.99},
@@ -53,15 +57,14 @@ while True:
             break
     else:
             selected_ids.append(selected_id)
-    print(selected_id)
 
 print("-----------------------------------------------------------------------------")
 print("Andys Grocery Store")
 print("123-456-7890")
 print("-----------------------------------------------------------------------------")
-print("CHECKOUT AT", )
+print("CHECKOUT AT ", now )
 print("-----------------------------------------------------------------------------")
-print("SELECTED PRODUCTS")
+print("SELECTED PRODUCTS:")
 # 2) input matching, calculations and printing
 for selected_id in selected_ids:
 
@@ -84,7 +87,7 @@ products = [...] #<--- that long list of product dictionaries provided above
 #
 
 print("TOTAL PRICE:", to_usd(total_price))
-TAX_AMOUNT = int(Total_price) * .0875
+TAX_AMOUNT = int(total_price) * .0875
 print("TAX:", to_usd(TAX_AMOUNT))
 GRAND_TOTAL = int(total_price)+int(TAX_AMOUNT)
 print("GRAND TOTAL:", to_usd(GRAND_TOTAL))
