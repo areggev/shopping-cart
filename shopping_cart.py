@@ -3,6 +3,7 @@
 import datetime
 
 now = datetime.datetime.now()
+dt_string = now.strftime("%a %m/%d/%Y %I:%M:%S %p")
 
 products = [
     {"id":1, "name": "Chocolate Sandwich Cookies", "department": "snacks", "aisle": "cookies cakes", "price": 3.50},
@@ -62,7 +63,7 @@ print("-------------------------------------------------------------------------
 print("Andys Grocery Store")
 print("123-456-7890")
 print("-----------------------------------------------------------------------------")
-print("CHECKOUT AT ", now )
+print("CHECKOUT AT ", dt_string)
 print("-----------------------------------------------------------------------------")
 print("SELECTED PRODUCTS:")
 # 2) input matching, calculations and printing
