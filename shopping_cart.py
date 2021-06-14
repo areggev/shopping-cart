@@ -76,21 +76,11 @@ for selected_id in selected_ids:
 
 print("-----------------------------------------------------------------------------")
 
-products = [...] #<--- that long list of product dictionaries provided above
-
-# 
-# some commented-out loop
-# ... representing the result of the first checkpoint (if you did it)
-# ... which accepts user inputs
-# ... and prints the results
-# ... and which we are temporarily ignoring
-# ... (yours will actually be some working python code)
-#
-
-print("TOTAL PRICE:", to_usd(total_price))
+print("SUBTOTAL:", to_usd(total_price))
 TAX_AMOUNT = int(total_price) * .0875
 print("TAX:", to_usd(TAX_AMOUNT))
 GRAND_TOTAL = int(total_price)+int(TAX_AMOUNT)
-print("GRAND TOTAL:", to_usd(GRAND_TOTAL))
+print("TOTAL:", to_usd(GRAND_TOTAL))
 print("-----------------------------------------------------------------------------")
 print("THANK YOU FOR SHOPPING AT ANDYS GROCERY STORE, WE HOPE TO SEE YOU AGAIN SOON.")
+print("-----------------------------------------------------------------------------")
