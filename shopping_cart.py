@@ -85,8 +85,8 @@ products = [...] #<--- that long list of product dictionaries provided above
 
 print("TOTAL PRICE:", to_usd(total_price))
 TAX_AMOUNT = int(Total_price) * .0875
-print("TAX":, to_usd(TAX_AMOUNT))
-GRAND_TOTAL = int(Total_price)+int(TAX_AMOUNT)
+print("TAX:", to_usd(TAX_AMOUNT))
+GRAND_TOTAL = int(total_price)+int(TAX_AMOUNT)
 print("GRAND TOTAL:", to_usd(GRAND_TOTAL))
 print("-----------------------------------------------------------------------------")
-print("THANK YOU FOR SHOPPING AT ANDYS GROCERY STORE, WE HOPE TO SEE YOU AGAIN SOON")
+print("THANK YOU FOR SHOPPING AT ANDYS GROCERY STORE, WE HOPE TO SEE YOU AGAIN SOON.")
