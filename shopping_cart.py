@@ -1,5 +1,9 @@
 # shopping_cart.py
 
+conda create -n shopping-env python=3.8 
+conda activate shopping-env
+pip install -r requirements.txt
+
 products = [
     {"id":1, "name": "Chocolate Sandwich Cookies", "department": "snacks", "aisle": "cookies cakes", "price": 3.50},
     {"id":2, "name": "All-Seasons Salt", "department": "pantry", "aisle": "spices seasonings", "price": 4.99},
@@ -67,3 +71,19 @@ for selected_id in selected_ids:
         matching_products = [p for p in products if str(p["id"]) == str(selected_id)]
         matching_product = matching_products[0]
         print(matching_product["name"], matching_product["price"])
+
+
+products = [...] #<--- that long list of product dictionaries provided above
+
+#
+# some commented-out loop
+# ... representing the result of the first checkpoint (if you did it)
+# ... which accepts user inputs
+# ... and prints the results
+# ... and which we are temporarily ignoring
+# ... (yours will actually be some working python code)
+#
+
+product_ids = [1, 8, 6, 16, 6] # temporary list of valid ids for testing purposes
+
+print("SHOPPING CART ITEM IDENTIFIERS INCLUDE:", product_ids)
