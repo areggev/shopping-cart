@@ -58,16 +58,13 @@ print("Andys Grocery Store")
 print("123-456-7890")
 print("-----------------------------------------------------------------------------")
 print("CHECKOUT AT", )
-print(selected_ids)
 print("SELECTED PRODUCTS")
 # 2) input matching, calculations and printing
 for selected_id in selected_ids:
-        print(selected_id)
-        # or maybe display the selected product's name and price
 
         matching_products = [p for p in products if str(p["id"]) == str(selected_id)]
         matching_product = matching_products[0]
-        print("...", matching_product["name"], "   (" , to_usd(matching_product["price"]), ")")
+        print("...", matching_product["name"], "(" , to_usd(matching_product["price"]), ")")
 
 
 products = [...] #<--- that long list of product dictionaries provided above
