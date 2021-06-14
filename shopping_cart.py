@@ -70,6 +70,7 @@ for selected_id in selected_ids:
         total_price = total_price + matching_product["price"]
         print("...", matching_product["name"], "(" , to_usd(matching_product["price"]), ")")
 
+print("-----------------------------------------------------------------------------")
 
 products = [...] #<--- that long list of product dictionaries provided above
 
@@ -84,8 +85,5 @@ products = [...] #<--- that long list of product dictionaries provided above
 
 print("TOTAL PRICE:", to_usd(string(total_price))
 
-product_ids = [1, 8, 6, 16, 6] # temporary list of valid ids for testing purposes
-
-print("SHOPPING CART ITEM IDENTIFIERS INCLUDE:", product_ids)
-
+print("-----------------------------------------------------------------------------")
 print("THANK YOU FOR SHOPPING AT ANDYS GROCERY STORE, WE HOPE TO SEE YOU AGAIN SOON")
